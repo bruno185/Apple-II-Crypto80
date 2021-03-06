@@ -37,6 +37,10 @@ DoMerlin.bat puts all things together. It needs a path to Merlin32 directory, to
 DoMerlin.bat is to be placed in project directory.
 It compile source (*.s) with Merlin32, copy 6502 binary to a disk image (containg ProDOS), and launch Applewin with this disk in S1,D1.
 
+k80A2.s is ready to be compiled on a genuine Apple II, with Merlin 8.
+It can be imported in a disk image using Ciderpress, then used on an Apple II (c in my case).
+I use Floppy emu [https://www.bigmessowires.com/floppy-emu/] wich is really great, congratulation to Big Mess O'Wire !!!!
+
 # Todo
 File name length is not tested. This can be imporant since encrypting adds ".K" to the file name (so length = length +2).
 
