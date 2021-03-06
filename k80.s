@@ -93,7 +93,7 @@ boucle  lda ]1,X
         ora #$80
         jsr cout
         inx
-        bra boucle
+        jmp boucle
 finm    EOM 
 *
 prnstr  MAC             ; display string (length in 1st byte)
