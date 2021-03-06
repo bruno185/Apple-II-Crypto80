@@ -10,7 +10,7 @@ Applesoft is not required.
 * user can encrpt or decrypt any file
 * the program adapts itself to 40 ou 80 col. mode.
 
-The last feature was intersting to realise. The non obvious thing (for me) is that th character sets (normal and atl), does not behave wether you are in 40 ou 80 column mode.
+The last feature was intersting to realise. The non obvious thing (for me) is that the character sets (normal and atl), does not behave wether you are in 40 ou 80 column mode.
 
 Note : if A file is encrypted to B file, and B file is encrypted to C file, A = C, because of EOR.
 Encrypt adds ".K" at the end of file name.
