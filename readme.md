@@ -1,7 +1,7 @@
 # Apple II Crypto
 
 A very basic program to encrpt/decrypt any file, using a secret phrase EORed with the file to encrpt/decrypt.
-It is written using assembly language only (Merlin). It uses MLI ProDOS calls for disk access.
+It is written in assembly language only (Merlin). It uses MLI ProDOS calls for disk access.
 Applesoft is not required.
 
 ## Features
