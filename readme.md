@@ -38,6 +38,8 @@ It compile source (*.s) with Merlin32, copy 6502 binary to a disk image (contain
 
 # Todo
 File name lengrh is not tested.
+
 Lower part of screen should be limited in a window, to avoid the all screnn scrolling.
+
 Prot to Mouse Graphic ToolKit, for a fancier look, and more functions.
 
