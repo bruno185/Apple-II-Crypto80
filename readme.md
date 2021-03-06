@@ -42,5 +42,5 @@ File name length is not tested. This can be imporant since encrypting adds ".K" 
 
 Lower part of screen should be limited in a window, to avoid the all screen scrolling.
 
-Port to Mouse Graphic ToolKit, for a fancier look, and more functions.
+Port to Mouse Graphics Toolkit, for a fancier look, and more functions.
 
