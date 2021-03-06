@@ -38,9 +38,9 @@ DoMerlin.bat is to be placed in project directory.
 It compile source (*.s) with Merlin32, copy 6502 binary to a disk image (containg ProDOS), and launch Applewin with this dis in S1,D1.
 
 # Todo
-File name lengrh is not tested.
+File name lengrh is not tested. This can be imporant since encrypting adds ".K" to the file name (so length = length +2).
 
-Lower part of screen should be limited in a window, to avoid the all screnn scrolling.
+Lower part of screen should be limited in a window, to avoid the all screen scrolling.
 
-Prot to Mouse Graphic ToolKit, for a fancier look, and more functions.
+Port to Mouse Graphic ToolKit, for a fancier look, and more functions.
 
