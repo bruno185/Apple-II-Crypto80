@@ -66,6 +66,8 @@ wrbuff      equ $5C00   ; file byffer for writing a file, 512 b.
 
 ptr1        equ $06
 prt2        equ $08
+menupos equ $04         ; start display menu on line # 4
+menunb  equ $04         ; 4 items in menu
 *
 *
 *
@@ -748,8 +750,7 @@ mtab    hex 01
 
 curm    hex 00
 invflag hex 00
-menupos equ $04         ; start display menu on line # 4
-menunb  equ $04         ; 4 items in menu
+
 
 m1      asc "Change PREFIX"
         hex 00
