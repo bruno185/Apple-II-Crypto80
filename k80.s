@@ -344,7 +344,7 @@ DoPrefix nop
         bne ]loop
         lda #$2f        ; add  "/" 
         sta pfbuffer+1  ; before prefix 
-        stx pfbuffer    ; length first 
+        stx pfbuffer    ; length in first byte
         jsr MLI         ; SET PREFIX
         dfb setprefix
         da  c6_parms
@@ -382,7 +382,12 @@ dmend   rts
 *
 * * * * * * Print menu item * * * * * * 
 *
-printm   nop             
+* charsets explained here : 
+* https://retrocomputing.stackexchange.com/questions/8652/
+* and here :
+* http://hackzapple.org/scripts_php/index.php?menu=14&mod=8517283d55e912b0b5ac842147e28904a4a751d3&page=7
+*
+printm  nop             
         sta ALTCHARSET0N   ; to get lowercase inverse
         lda #$3F
         sta invup+1     ; for 40 col. diplay 
@@ -390,14 +395,9 @@ printm   nop
         bcc prm
         lda #$7F
         sta invup+1     ; for 80 col. diplay         
-
-* charsets explained here : 
-* https://retrocomputing.stackexchange.com/questions/8652/
-* and here :
-* http://hackzapple.org/scripts_php/index.php?menu=14&mod=8517283d55e912b0b5ac842147e28904a4a751d3&page=7
 prm     ldy #$00
 lprint  lda (ptr1),y    ; read menu string
-        beq printend    ; ended by 0
+        beq prtend    ; ended by 0
         pha             ; save char. to display
         lda invflag     ; normal or inverse ?
         beq normal      ; normal char.
@@ -412,7 +412,7 @@ normal  pla
 out     jsr cout
         iny
         jmp lprint
-printend nop 
+prtend  nop 
         lda #$8D        ; next line
         jsr cout
         rts
@@ -598,7 +598,7 @@ rw2     nop
         jsr MLI         ; WRITE 
         dfb write
         da  cb_parms
-        bcs RWex
+        bcs RWex        ; end of file if Carry set (or error)
         jmp RW
 *
 docode  nop             ; encrypt file buffer 
