@@ -6,7 +6,7 @@ Applesoft is not required.
 
 ## Features
 * Works with ProDOS 8 (not tested on GS)
-* User can chage PREFIX
+* User can change PREFIX
 * user can encrpt or decrypt any file
 * the program adapts itself to 40 ou 80 col. mode.
 
@@ -19,7 +19,7 @@ Decrypt adds ".D" at the end of file name.
 
 ## Requirements to compile and run
 Here is my configuration:
-* Visual Studio Code with 2 extensions 
+* Visual Studio Code with 2 extensions :
 -> Merlin32 : https://marketplace.visualstudio.com/items?itemName=olivier-guinart.merlin32 : 6502 code hightliting 
 -> https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner : running batch file with right-clic.
 
