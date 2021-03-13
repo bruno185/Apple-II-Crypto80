@@ -61,8 +61,8 @@ fbuff       equ $5100   ; file buffer, 1024 b., for reading
 filename    equ $5500   ; storage for filename (65 bytes max)
 fbuffW      equ $5600   ; file buffer, 1024 b., for writing
 
-rdbuff      equ $5A00   ; file byffer for reading a file, 512 b.
-wrbuff      equ $5C00   ; file byffer for writing a file, 512 b.
+rdbuff      equ $5A00   ; file buffer for reading a file, 512 b.
+wrbuff      equ $5C00   ; file buffer for writing a file, 512 b.
 
 ptr1        equ $06
 prt2        equ $08
@@ -179,7 +179,7 @@ getYN   MAC             ; key = Y or y : Carry = 0
         cmp #"y"
         beq Yes
         sec
-        jmp YNend
+        bcs YNend       ; = jmp
 Yes     clc
 YNend   nop
         EOM
@@ -199,7 +199,7 @@ get80   MAC             ; 80 col : Carry = 1
         lda 80col       ; 40 col : Carry = 0
         bmi do80
         clc
-        jmp do40
+        bcc do40        ; = jmp             
 do80    sec
 do40    EOM    
 
@@ -358,7 +358,7 @@ dispmenu nop
         gotoXY 0;menupos
         ldx #$00
 loop    lda mtab,x      ; read menu #
-        beq :fin        ; if = 0 then end
+        beq dmend       ; if = 0 then end
         pha             ; save meun #
         inx             ; read string memory location
         lda mtab,x      ; in ptr1
@@ -378,7 +378,7 @@ prn2    jsr printm      ; display menu item
         inx
         jmp loop        ; next item
         sta ALTCHARSET0FF
-:fin    rts
+dmend   rts
 *
 * * * * * * Print menu item * * * * * * 
 *
