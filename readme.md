@@ -46,7 +46,7 @@ I use Floppy emu [www.bigmessowires.com/floppy-emu] wich is really great, congra
 
 ## Todo
 
-File name length is not tested. This can be imporant since encrypting adds ".K" to the file name (so length = length +2).
+File name length should be verified. This can be imporant since encrypting adds ".K" (or ".D" when decrypting) to the file name (so length = length +2).
 
 Lower part of screen should be limited in a window, to avoid the all screen scrolling.
 
