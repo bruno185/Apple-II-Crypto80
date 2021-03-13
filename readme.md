@@ -5,6 +5,7 @@ It is written in assembly language only (Merlin). It uses MLI ProDOS calls for d
 Applesoft is not required.
 
 ## Features
+
 * Works with ProDOS 8 (not tested on GS)
 * User can change PREFIX
 * user can encrpt or decrypt any file
@@ -18,33 +19,35 @@ Encrypt adds ".K" at the end of file name.
 Decrypt adds ".D" at the end of file name.
 
 ## Requirements to compile and run
+
 Here is my configuration:
+
 * Visual Studio Code with 2 extensions :
--> Merlin32 : https://marketplace.visualstudio.com/items?itemName=olivier-guinart.merlin32 : 6502 code hightliting 
--> https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner : running batch file with right-clic.
 
-* Merlin32 cross compiler : http://brutaldeluxe.fr/products/crossdevtools/merlin/
+-> Merlin32 : marketplace.visualstudio.com/items?itemName=olivier-guinart.merlin32 : 6502 code hightliting
+-> marketplace.visualstudio.com/items?itemName=formulahendry.code-runner : running batch file with right-clic.
 
-* Applewin (emulator) : https://github.com/AppleWin/AppleWin
+* Merlin32 cross compiler : brutaldeluxe.fr/products/crossdevtools/merlin
 
-* Applecommander (disk utility) : http://applecommander.sourceforge.net/
+* Applewin (emulator) : github.com/AppleWin/AppleWin
 
-* Ciderpress : https://a2ciderpress.com/
+* Applecommander (disk utility) : applecommander.sourceforge.net
 
+* Ciderpress : a2ciderpress.com
 
-Note : 
+Note :
 DoMerlin.bat puts all things together. It needs a path to Merlin32 directory, to Applewin, and to Applecommander.
 DoMerlin.bat is to be placed in project directory.
 It compile source (*.s) with Merlin32, copy 6502 binary to a disk image (containg ProDOS), and launch Applewin with this disk in S1,D1.
 
 k80A2.s is ready to be compiled on a genuine Apple II, with Merlin 8.
 It can be imported in a disk image using Ciderpress, then used on an Apple II (c in my case).
-I use Floppy emu [https://www.bigmessowires.com/floppy-emu/] wich is really great, congratulation to Big Mess O'Wire !!!!
+I use Floppy emu [www.bigmessowires.com/floppy-emu] wich is really great, congratulation to Big Mess O'Wire !!!!
 
-# Todo
+## Todo
+
 File name length is not tested. This can be imporant since encrypting adds ".K" to the file name (so length = length +2).
 
 Lower part of screen should be limited in a window, to avoid the all screen scrolling.
 
 Port to Mouse Graphics Toolkit, for a fancier look, and more functions.
-
