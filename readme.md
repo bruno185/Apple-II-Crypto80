@@ -43,7 +43,7 @@ It compile source (*.s) with Merlin32, copy 6502 binary to a disk image (contain
 
 k80A2.s is ready to be compiled on a genuine Apple II, with Merlin 8.
 It can be imported in a disk image using Ciderpress, then used on an Apple II (c in my case).
-I use Floppy emu [www.bigmessowires.com/floppy-emu] wich is really great, congratulation to Big Mess O'Wire !!!!
+I use [Floppy emu](www.bigmessowires.com/floppy-emu) wich is really great, congratulation to Big Mess O'Wire !!!!
 
 ## Todo
 
