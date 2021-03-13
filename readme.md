@@ -8,8 +8,8 @@ Applesoft is not required.
 
 * Works with ProDOS 8 (not tested on GS)
 * User can change PREFIX
-* user can encrpt or decrypt any file
-* the program adapts itself to 40 ou 80 col. mode.
+* User can encrpt or decrypt any file
+* The program adapts itself to 40 ou 80 col. mode.
 
 The last feature was intersting to realise. The non obvious thing (for me) is that the character sets (normal and atl), does not behave wether you are in 40 ou 80 column mode.
 
