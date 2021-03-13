@@ -24,16 +24,17 @@ Here is my configuration:
 
 * Visual Studio Code with 2 extensions :
 
--> Merlin32 : marketplace.visualstudio.com/items?itemName=olivier-guinart.merlin32 : 6502 code hightliting
--> marketplace.visualstudio.com/items?itemName=formulahendry.code-runner : running batch file with right-clic.
+-> [Merlin32 : 6502 code hightliting](marketplace.visualstudio.com/items?itemName=olivier-guinart.merlin32)
 
-* Merlin32 cross compiler : brutaldeluxe.fr/products/crossdevtools/merlin
+-> [Code-runner :  running batch file with right-clic.](marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
 
-* Applewin (emulator) : github.com/AppleWin/AppleWin
+* [Merlin32 cross compiler](brutaldeluxe.fr/products/crossdevtools/merlin)
 
-* Applecommander (disk utility) : applecommander.sourceforge.net
+* [Applewin : pple IIe emulator](github.com/AppleWin/AppleWin)
 
-* Ciderpress : a2ciderpress.com
+* [Applecommander ; disk image utility](applecommander.sourceforge.net)
+
+* [Ciderpress ; disk image utility](a2ciderpress.com)
 
 Note :
 DoMerlin.bat puts all things together. It needs a path to Merlin32 directory, to Applewin, and to Applecommander.
