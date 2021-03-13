@@ -13,7 +13,7 @@ Applesoft is not required.
 
 The last feature was intersting to realise. The non obvious thing (for me) is that the character sets (normal and atl), does not behave wether you are in 40 ou 80 column mode.
 
-Note : if A file is encrypted to B file, and B file is encrypted to C file, A = C, because of EOR.
+Note : if file A is encrypted to file B, and file B is encrypted to file C, then file A = file C, because of EOR.
 
 Encrypt adds ".K" at the end of file name.
 Decrypt adds ".D" at the end of file name.
