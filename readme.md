@@ -1,4 +1,4 @@
-# Apple II Crypto
+# Apple II Crypto 40/80
 
 A very basic program to encrpt/decrypt any file, using a secret phrase EORed with the file to encrpt/decrypt.
 It is written in assembly language only (Merlin). It uses MLI ProDOS calls for disk access.
